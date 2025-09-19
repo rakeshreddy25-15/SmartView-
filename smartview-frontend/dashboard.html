@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SmartView | Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="CSS/dashboard.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>SmartView</h2>
+    <a href="dashboard.html" class="active">Dashboard</a>
+    <a href="applications.html">Applications</a>
+    <a href="notes.html">Notes</a>
+    <a href="#" id="logout-link">Logout</a>
+  </div>
+
+  <!-- Main -->
+  <div class="main-content">
+    <div class="top-bar">
+      <h1>Overview</h1>
+      <button class="theme-toggle" id="theme-toggle-btn">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+
+    <div class="cards">
+      <div class="card"><h3 id="total-apps">0</h3><p>Total Applications</p></div>
+      <div class="card"><h3 id="upcoming-interviews">0</h3><p>Upcoming Interviews</p></div>
+      <div class="card"><h3 id="offers-received">0</h3><p>Offers Received</p></div>
+    </div>
+
+    <canvas id="statusChart" width="400" height="200"></canvas>
+  </div>
+
+  <script src="JS/dashboard.js"></script> 
+</body>
+</html>

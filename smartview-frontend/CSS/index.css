@@ -1,0 +1,101 @@
+:root {
+  --bg: linear-gradient(135deg, #1f1c2c, #928dab);
+  --text-color: #fff;
+  --card-bg: rgba(255, 255, 255, 0.1);
+  --btn-bg: #6a82fb;
+  --btn-hover: #5a72e1;
+}
+
+body.dark-mode {
+  --bg: linear-gradient(135deg, #0f0f0f, #333);
+  --text-color: #eee;
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --btn-bg: #222;
+  --btn-hover: #444;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.auth-container {
+  width: 350px;
+}
+
+.auth-box {
+  background: var(--card-bg);
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.auth-box h2 {
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+.btn {
+  background: var(--btn-bg);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn:hover {
+  background: var(--btn-hover);
+}
+
+.switch-text {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.switch-text a {
+  color: #4fc3f7;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.toggle-theme {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: var(--btn-bg);
+  border: none;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}

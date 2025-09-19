@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SmartView | Applications</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="CSS/applications.css">
+</head>
+<body>
+  <div class="sidebar">
+    <h2>SmartView</h2>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="applications.html" class="active">Applications</a>
+    <a href="notes.html">Profile</a>
+    <a href="#" id="logout-link">Logout</a>
+  </div>
+
+  <div class="main-content">
+    <div class="top-bar">
+      <h1>Job Applications</h1>
+      <button class="theme-toggle" id="theme-toggle-btn">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+
+    <form id="applicationForm">
+      <input type="text" id="company" placeholder="Company Name" required />
+      <input type="text" id="position" placeholder="Position" required />
+      <select id="status">
+        <option value="Pending">Pending</option>
+        <option value="Interviewed">Interviewed</option>
+        <option value="Rejected">Rejected</option>
+        <option value="Offered">Offered</option>
+      </select>
+      <input type="date" id="date" required />
+      <button type="submit">Save Application</button>
+    </form>
+
+    <table id="applicationsTable">
+      <thead>
+        <tr>
+          <th>Company</th>
+          <th>Position</th>
+          <th>Status</th>
+          <th>Date</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="/JS/applications.js"></script>
+</body>
+</html>
